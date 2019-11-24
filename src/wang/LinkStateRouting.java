@@ -465,7 +465,7 @@ class router
 	//创建LSP包函数
 	void originatePacket()
 	{	
-		//档开关打开时，正常
+		//当开关打开时，正常
 		if(this.tick == 1)
 		{
 			//首先产生一个当前状态下的LSP包,全部为初始化的值：ID=id、sequence_number=1、TTL=10、可达网络：需要初始化

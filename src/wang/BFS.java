@@ -9,8 +9,8 @@ import java.util.LinkedList;
 public class BFS {
     	
 	public static int[][] graph;	//adjacency matrix
-	public static int[]   indegree; // 这n个点的入度
-	public static int n; 			// 顶点数
+	public static int[]   indegree; 
+	public static int n; 			
 	public static int e;			// 边数
 	public static boolean[] visited;
 	public static LinkedList<Integer> temp = new LinkedList<Integer>();
@@ -65,7 +65,7 @@ public class BFS {
 //			System.out.println(ss[1]);
 			if (graph[p][q] == 0) 
 	        { 	
-	         	// 是否是重边
+	         	
 	            graph[p][q] = 1;
 	            indegree[q]++;
 	        }
